@@ -23,13 +23,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">P</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-tertiary">Platinum College</h1>
-              <p className="text-xs text-muted-foreground">of Progress</p>
-            </div>
+            <img 
+              src="/lovable-uploads/1442e783-31bb-495e-a297-c76492198152.png" 
+              alt="Platinum College of Progress" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

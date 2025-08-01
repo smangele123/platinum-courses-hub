@@ -8,6 +8,9 @@ import Courses from "./pages/Courses";
 import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
 import HomeBasedCare6Month from "./pages/HomeBasedCare6Month";
+import WebProgramming from "./pages/WebProgramming";
+import CyberSecurity from "./pages/CyberSecurity";
+import GradeRewrites from "./pages/GradeRewrites";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +28,9 @@ const App = () => (
           <Route path="/apply" element={<Apply />} />
           <Route path="/courses/home-based-care/6-month" element={<HomeBasedCare6Month />} />
           <Route path="/courses/home-based-care" element={<HomeBasedCare6Month />} />
+          <Route path="/courses/web-programming" element={<WebProgramming />} />
+          <Route path="/courses/cyber-security" element={<CyberSecurity />} />
+          <Route path="/courses/grade-rewrites" element={<GradeRewrites />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -26,7 +26,7 @@ const Index = () => {
     {
       title: "Web Programming with AWS",
       description: "Learn modern web development with AWS cloud hosting and deployment.",
-      duration: "6 months",
+      duration: "10 months (includes internship)",
       fee: "R5,000/month",
       certification: "AWS Certified Pathway",
       image: heroWebProgramming,
@@ -82,34 +82,46 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative">
-        <div className="absolute inset-0">
-          <img
-            src={heroCollege}
-            alt="Platinum College of Progress"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+      {/* Hero Section - More Realistic */}
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-background via-muted/20 to-accent/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-tertiary mb-6">
               We Prepare You for{" "}
               <span className="text-primary">Job-Ready Careers</span>{" "}
               in Just 6–18 Months
             </h1>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
               Transform your future with professional skills training at Platinum College of Progress. 
-              Affordable fees, internship support, and recognised certification.
+              Located in Cape Town, we offer affordable courses with internship support and recognised certification.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button variant="hero" size="xl" asChild>
                 <Link to="/courses">View All Courses</Link>
               </Button>
-              <Button variant="outline" size="xl" className="bg-white/10 border-white text-white hover:bg-white hover:text-tertiary">
+              <Button variant="secondary" size="xl" asChild>
                 <Link to="/contact">Contact Us</Link>
               </Button>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <p className="text-3xl font-bold text-primary">500+</p>
+                <p className="text-sm text-muted-foreground">Graduates Placed</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-primary">95%</p>
+                <p className="text-sm text-muted-foreground">Job Placement Rate</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-primary">15+</p>
+                <p className="text-sm text-muted-foreground">Years Experience</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-primary">50+</p>
+                <p className="text-sm text-muted-foreground">Industry Partners</p>
+              </div>
             </div>
           </div>
         </div>

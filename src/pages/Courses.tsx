@@ -34,7 +34,7 @@ const Courses = () => {
     {
       title: "Web Programming with AWS",
       description: "Master modern web development with cloud deployment on Amazon Web Services.",
-      duration: "6 months",
+      duration: "10 months (includes internship)",
       fee: "R5,000/month",
       certification: "AWS Certified Pathway",
       image: heroWebProgramming,
