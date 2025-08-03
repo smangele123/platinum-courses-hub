@@ -77,8 +77,7 @@ Message: ${formData.message}`;
             Apply Now
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Take the first step towards your new career. Complete the application form below 
-            or contact us directly for immediate assistance.
+            Ready to start your new career? Contact us directly for immediate assistance.
           </p>
         </div>
       </section>
@@ -86,113 +85,22 @@ Message: ${formData.message}`;
       <section className="py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Application Form */}
+            {/* Application Info */}
             <div className="lg:col-span-2">
               <Card className="card-shadow">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-tertiary">Application Form</CardTitle>
+                  <CardTitle className="text-2xl text-tertiary">Ready to Apply?</CardTitle>
                   <p className="text-muted-foreground">
-                    Fill out the form below and we'll send your application via WhatsApp for quick processing.
+                    We're here to help you take the next step in your career. Contact us using any of the methods below.
                   </p>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="fullName">Full Name *</Label>
-                        <Input
-                          id="fullName"
-                          type="text"
-                          required
-                          value={formData.fullName}
-                          onChange={(e) => setFormData({...formData, fullName: e.target.value})}
-                          placeholder="Enter your full name"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="email">Email Address *</Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          required
-                          value={formData.email}
-                          onChange={(e) => setFormData({...formData, email: e.target.value})}
-                          placeholder="your.email@example.com"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="phone">Phone Number *</Label>
-                        <Input
-                          id="phone"
-                          type="tel"
-                          required
-                          value={formData.phone}
-                          onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                          placeholder="073 123 4567"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="course">Course of Interest *</Label>
-                        <Select value={formData.course} onValueChange={(value) => setFormData({...formData, course: value})}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select a course" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {courses.map((course) => (
-                              <SelectItem key={course} value={course}>
-                                {course}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="grade">Last Grade Passed</Label>
-                        <Select value={formData.grade} onValueChange={(value) => setFormData({...formData, grade: value})}>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select grade" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="grade-9">Grade 9</SelectItem>
-                            <SelectItem value="grade-10">Grade 10</SelectItem>
-                            <SelectItem value="grade-11">Grade 11</SelectItem>
-                            <SelectItem value="grade-12">Grade 12 / Matric</SelectItem>
-                            <SelectItem value="higher">Higher Education</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div>
-                        <Label htmlFor="startDate">Preferred Start Date</Label>
-                        <Input
-                          id="startDate"
-                          type="date"
-                          value={formData.startDate}
-                          onChange={(e) => setFormData({...formData, startDate: e.target.value})}
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="message">Additional Message</Label>
-                      <Textarea
-                        id="message"
-                        rows={4}
-                        value={formData.message}
-                        onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        placeholder="Tell us about your career goals or any questions you have..."
-                      />
-                    </div>
-
-                    <Button type="submit" variant="cta" size="lg" className="w-full">
-                      Submit Application
-                    </Button>
-                  </form>
+                  <div className="text-center py-8">
+                    <h3 className="text-xl font-semibold text-tertiary mb-4">Application Form Coming Soon</h3>
+                    <p className="text-muted-foreground mb-6">
+                      We're setting up a streamlined application process. For now, please contact us directly and we'll guide you through the enrollment.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </div>

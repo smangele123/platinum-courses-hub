@@ -77,8 +77,8 @@ const Courses = () => {
             Choose from our range of accredited courses designed to get you job-ready quickly. 
             All courses include internship support and job placement assistance.
           </p>
-          <Button variant="tertiary" size="xl" asChild>
-            <Link to="/apply">Apply Now</Link>
+          <Button variant="secondary" size="xl" asChild>
+            <Link to="/contact">Contact Us</Link>
           </Button>
         </div>
       </section>

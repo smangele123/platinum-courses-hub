@@ -187,8 +187,8 @@ const Index = () => {
               Don't wait – spaces are limited. Contact us today to secure your spot in our next intake.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="tertiary" size="xl" asChild>
-                <Link to="/apply">Apply Now</Link>
+              <Button variant="secondary" size="xl" asChild>
+                <Link to="/contact">Contact Us</Link>
               </Button>
               <Button 
                 variant="outline" 
