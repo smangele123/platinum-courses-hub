@@ -50,8 +50,12 @@ const CyberSecurity = () => {
               cybersecurity program. Industry-recognized certifications and guaranteed internship.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/apply">Apply Now</Link>
+              <Button 
+                variant="hero" 
+                size="xl" 
+                onClick={() => window.open("https://form.jotform.com/252143193569057", "_blank")}
+              >
+                Apply Now
               </Button>
               <Button 
                 variant="whatsapp" 
@@ -233,8 +237,12 @@ const CyberSecurity = () => {
             Start your journey today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="tertiary" size="xl" asChild>
-              <Link to="/apply">Apply Now</Link>
+            <Button 
+              variant="tertiary" 
+              size="xl" 
+              onClick={() => window.open("https://form.jotform.com/252143193569057", "_blank")}
+            >
+              Apply Now
             </Button>
             <Button 
               variant="outline" 

@@ -173,7 +173,7 @@ const Contact = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Don't wait – spaces fill up quickly. Apply now to secure your spot in our next intake.
           </p>
-          <Button variant="cta" size="xl" onClick={() => window.location.href = "/apply"}>
+          <Button variant="cta" size="xl" onClick={() => window.open("https://form.jotform.com/252143193569057", "_blank")}>
             Apply Online Now
           </Button>
         </div>

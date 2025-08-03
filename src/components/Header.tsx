@@ -58,8 +58,12 @@ const Header = () => {
               <MessageCircle className="w-4 h-4" />
               WhatsApp
             </Button>
-            <Button variant="cta" size="sm" asChild>
-              <Link to="/apply">Apply Now</Link>
+            <Button 
+              variant="cta" 
+              size="sm" 
+              onClick={() => window.open("https://form.jotform.com/252143193569057", "_blank")}
+            >
+              Apply Now
             </Button>
           </div>
 
@@ -103,10 +107,15 @@ const Header = () => {
                   <MessageCircle className="w-4 h-4" />
                   WhatsApp
                 </Button>
-                <Button variant="cta" size="sm" asChild>
-                  <Link to="/apply" onClick={() => setIsMenuOpen(false)}>
-                    Apply Now
-                  </Link>
+                <Button 
+                  variant="cta" 
+                  size="sm" 
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.open("https://form.jotform.com/252143193569057", "_blank");
+                  }}
+                >
+                  Apply Now
                 </Button>
               </div>
             </div>

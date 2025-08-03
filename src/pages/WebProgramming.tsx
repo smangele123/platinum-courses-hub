@@ -50,8 +50,12 @@ const WebProgramming = () => {
               including internship placement to launch your tech career.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/apply">Apply Now</Link>
+              <Button 
+                variant="hero" 
+                size="xl" 
+                onClick={() => window.open("https://form.jotform.com/252143193569057", "_blank")}
+              >
+                Apply Now
               </Button>
               <Button 
                 variant="whatsapp" 
@@ -238,8 +242,12 @@ const WebProgramming = () => {
             Join the growing tech industry with skills that are in high demand. Our graduates work at top companies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="tertiary" size="xl" asChild>
-              <Link to="/apply">Apply Now</Link>
+            <Button 
+              variant="tertiary" 
+              size="xl" 
+              onClick={() => window.open("https://form.jotform.com/252143193569057", "_blank")}
+            >
+              Apply Now
             </Button>
             <Button 
               variant="outline" 
